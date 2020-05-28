@@ -137,16 +137,6 @@ function wowActivation() {
     };
 }
 
-// counterUpInit
-function counterUpInit() {
-    if (jQuery('.counter').length) {
-        jQuery('.counter').counterUp({
-            delay: 20,
-            time: 5000
-        });
-    }
-}
-
 // Waves.js
 function WavesActivation() {
     if (jQuery('.wave, .wave-round').length) {
@@ -178,27 +168,27 @@ function backToTopVisible() {
     };
 }
 
-// function preLoaderActivation() {
-//     if($('body').length) {
-//         $("body").queryLoader2({
-//             barColor: "#a41cc4",
-//             backgroundColor: "#fff",
-//             percentage: true,
-//             deepSearch: false,
-//             barHeight: 5,
-//             minimumTime: 1000,
-//             fadeOutTime: 800
-//         });
-//     };
-// }
+function preLoaderActivation() {
+    if($('body').length) {
+        $("body").queryLoader2({
+            barColor: "#ef233c",
+            backgroundColor: "#041822",
+            percentage: true,
+            deepSearch: false,
+            barHeight: 5,
+            minimumTime: 1000,
+            fadeOutTime: 800
+        });
+    };
+}
 
 function tilt() {
-    if($('.service-card').length) {
-        $('.service-card').tilt({
+    if($('.tiltCard').length) {
+        $('.tiltCard').tilt({
             glare: true,
-            maxGlare: .5,
-            transition: false,
-            maxTilt: 10
+            maxGlare: .2,
+            transition: true,
+            maxTilt: 1
         });
     };
 }
@@ -268,12 +258,10 @@ function filterizrActivation() {
 // instance of fuction while Document ready event   
 jQuery(document).on('ready', function() {
     (function($) {
-        // preLoaderActivation();
         tilt();
         WavesActivation();
         backToTop();
         wowActivation();
-        counterUpInit();
         owlCarouselActivation();
         bootstrapAnimatedLayer();
         StickySidebar();
@@ -311,6 +299,7 @@ jQuery(window).on('scroll', function () {
 // instance of fuction while Window Load event
 jQuery(window).on('load', function() {
     (function($) {
+        preLoaderActivation();
         mainMenu();
         filterizrActivation();
     })(jQuery);
@@ -319,7 +308,7 @@ jQuery(window).on('load', function() {
 // enllax.js
 $(window).enllax();
 
-var myTitleWrapper = $('.setrlimit');
+var myTitleWrapper = $('.strlenth');
 myTitleWrapper.each(function () {
   var Self = $(this);
   var myTitleText = Self.text();
@@ -329,7 +318,6 @@ myTitleWrapper.each(function () {
     $(this).text(myTitleText.substring(0,myCount) + '...');
   }
 });
-
 /*========================================================================== 
 ======================== Custom script for altra end ===================
 ============================================================================*/

@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Rip City Freight offers safe, reliable, and affordable freight transportation solutions.  Regardless of the type of asset being moved, or the distance it needs to travel, Rip City Freight has the experience, expertise and relationships to coordinate the transportation and delivery of your shipments."/>
-    <meta name="author" content="Rip City Freight">
+    <meta name="description" content="Creative Writer, Researcher, Teacher & Multipotentialite">
+    <meta name="author" content="Shafrina Khatun">
     <title><?= $title; ?></title>
     <link rel="shortcut icon" href="img/favicon.png">
     
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Josefin+Slab:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Josefin+Slab:wght@400;600;700&family=Lobster+Two:wght@400;700&family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
