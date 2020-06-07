@@ -14,7 +14,6 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/lightbox.css" rel="stylesheet">
     <link href="css/waves.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/hamburgers.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">

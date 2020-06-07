@@ -37,96 +37,6 @@ function bootstrapAnimatedLayer() {
     });
 }
 
-function owlCarouselActivation() {
-    if ($(".banner-carousel").length) {
-        $(".banner-carousel").owlCarousel({
-            autoplay: true,
-            autoplayTimeout: 12000,
-            loop: true,
-            animateOut: "fadeOut",
-            animateIn: "fadeIn",
-            pagination: true,
-            mouseDrag: false,
-            pullDrag: false,
-            freeDrag: false,
-            touchDrag: false,
-            margin: 0,
-            stagePadding: 0,
-            smartSpeed: 1000,
-            dotsEach: true,
-            items: 1,
-            nav: true,
-            navElement: "span",
-            navText: [
-                "<span class='fa fa-long-arrow-left wave'></span>",
-                "<span class='fa fa-long-arrow-right wave'></span>"]
-        })
-    };
-    if ($(".testimony").length) {
-        $(".testimony").owlCarousel({
-            autoplay: true,
-            autoplayTimeout: 10000,
-            loop: true,
-            animateOut: 'zoomOut',
-            animateIn: 'flipInX',
-            pagination: false,
-            mouseDrag: false,
-            pullDrag: false,
-            freeDrag: false,
-            touchDrag: false,
-            margin: 0,
-            stagePadding: 0,
-            smartSpeed: 1000,
-            items: 1,
-            nav: true,
-            navElement: "span",
-            navText: [
-                "<span class='fa fa-long-arrow-left ratingBtn'></span>",
-                "<span class='fa fa-long-arrow-right ratingBtn'></span>"]
-        })
-    };
-
-    // team-carousel
-    if($('.team-carousel').length) {
-        $('.team-carousel').owlCarousel({
-            autoplay: true,
-            autoplayTimeout: 10000,
-            navSpeed: 1000,
-            loop: true,
-            autoplayHoverPause: true,
-            pagination: false,
-            smartSpeed: 1000,
-            margin: 15,
-            stagePadding: 0,
-            items: 4, 
-            nav: true,
-            navElement: "span",
-            navText: [
-                "<span class='wave bg1 text-white team-btn fa fa-long-arrow-left'></span>",
-                "<span class='wave bg1 text-white team-btn fa fa-long-arrow-right'></span>"
-            ],
-            responsive : {
-                0 : {
-                    items: 1,
-                    stagePadding: 15
-                },
-                400 : {
-                    items: 2,
-                    stagePadding: 15
-                },
-                700 : {
-                    items: 3,
-                    stagePadding: 15
-                },
-                992 : {
-                    items: 4,
-                    stagePadding: 0
-                }
-            }
-        });
-    };
-}
-
 function wowActivation() {
 // Activation of WOW
     if ($('.wow').length) {
@@ -215,16 +125,6 @@ function fixedNav() {
     }
 }
 
-function StickySidebar() {
-    if ($('.fixedToBottom').length) {
-        $('.fixedToBottom').theiaStickySidebar({
-            'additionalMarginBottom': 30,
-            'additionalMarginTop': 20,
-            'sidebarBehavior': 'stick-to-bottom'
-        });
-    }
-}
-
 // hamburger
 function hamburger() {
     if($(".hamburger").length) { 
@@ -262,9 +162,7 @@ jQuery(document).on('ready', function() {
         WavesActivation();
         backToTop();
         wowActivation();
-        owlCarouselActivation();
         bootstrapAnimatedLayer();
-        StickySidebar();
         hamburger();
 
         var $navi = $(".main-nav"), scrollTop = 0;

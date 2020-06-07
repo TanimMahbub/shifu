@@ -85,7 +85,7 @@
 					<div class="col-lg-8">
 						<div class="resume-detail">
 							<h2 class="c2">University Of Liberal Arts Bangladesh (ULAB)</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel blanditiis minus quidem quod ipsum reiciendis officia rem maxime repellat itaque!</p>
+							<p>For a Creative Writer, a Master's degree on English Literature and Creative Writing will add great potentials to become a better writer</p>
 						</div>
 					</div>
 				</div>
@@ -102,7 +102,7 @@
 					<div class="col-lg-8">
 						<div class="resume-detail">
 							<h2 class="c2">University Of Development Alternative (UODA)</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel blanditiis minus quidem quod ipsum reiciendis officia rem maxime repellat itaque!</p>
+							<p>Completed 4 years graduation program from UODA on English Language and Literature and throughout this process, a huge interest in Literary World has gradually developed</p>
 						</div>
 					</div>
 				</div>

@@ -9,30 +9,30 @@
 			<div class="row justify-content-center align-items-center">
 				<div class="col-lg-5">
 					<div class="about-img mx-auto tiltCard">
-						<img src="img/shafrina/04.jpg" alt="Master Shifu">
+						<img src="img/shafrina/05.jpg" alt="Master Shifu">
 					</div>
 					<ul class="short-contact d-flex justify-content-between">
 						<li>
 							<a href="https://www.facebook.com/safe.rain25" target="_blank">
-								<span>facebook.com/safe.rain25</span>
+								<span>Facebook</span>
 								<i class="fa fa-facebook"></i>
 							</a>
 						</li>
 						<li>
 							<a href="https://www.twitter.com/KhatunShafrina" target="_blank">
-								<span>twitter.com/KhatunShafrina</span>
+								<span>Twitter</span>
 								<i class="fa fa-twitter"></i>
 							</a>
 						</li>
 						<li>
 							<a href="https://www.instagram.com/shafrina_khatun" target="_blank">
-								<span>instagram.com/shafrina_khatun</span>
+								<span>Instagram</span>
 								<i class="fa fa-instagram"></i>
 							</a>
 						</li>
 						<li>
 							<a href="mailto:shifu@gmail.com">
-								<span>shifu@gmail.com</span>
+								<span>Gmail</span>
 								<i class="fa fa-envelope"></i>
 							</a>
 						</li>
@@ -46,8 +46,7 @@
 						<p>Having tried many different things in life, she finally found herself unswervingly devoted to Yoga, playing the Cello and writing. She believes that the more we mature and grow, the more complicated the challenges we face. “However, the regular repetition of rumination and self-reflection are the only way to redemption,” she says.</p>
 						<p>Furthermore, she admits to the fact that she is profoundly keen to teach everything she learns, and impart the knowledge she has gained from her colorful life experiences, to the learners concerned. In her words, “I’m overwhelmingly blessed to be a teacher as well.”</p>
 						<div class="text-right mt-4">
-							<a href="#" class="resume-btn f2">download my CV <i class="fa fa-download ml-2"></i></a>
-							<a href="#" class="resume-btn f2 ml-lg-3">download my Resume <i class="fa fa-download ml-2"></i></a>
+							<a href="img/Resume_shafrina_2020.pdf" target="_blank" class="resume-btn f2">download my Resume <i class="fa fa-download ml-2"></i></a>
 						</div><!-- /.text-right -->
 					</section>
 				</div>
