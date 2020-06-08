@@ -1,7 +1,7 @@
 <!----------------->
 <!-- resume start -->
 <!----------------->
-<div class="resume crop" id="resume-btn">
+<div class="resume crop" id="resume">
 	<p class="secNum sec-l" data-enllax-ratio="-1" data-enllax-direction="horizontal" data-enllax-type="foreground">RESUME</p>
 	<div class="container">
 		<div class="resume-container cw">

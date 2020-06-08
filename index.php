@@ -7,6 +7,7 @@
 	<div class="page-wrapper">
 		<?php
 			include_once('inc/mainSlider.php');
+			include_once('inc/nav.php');
 			include_once('inc/section-about.php');
 			include_once('inc/section-resume.php');
 			include_once('inc/section-skill.php');

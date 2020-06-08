@@ -12,7 +12,7 @@
         <script src="js/lightbox.js"></script>
         <script src="js/tilt.jquery.js"></script>
         <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
-        <script src="js/ajax-form.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 

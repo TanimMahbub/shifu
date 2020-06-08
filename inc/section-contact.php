@@ -39,16 +39,14 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-xl-8 col-lg-10">
-				<div class="contact-form">
-					<form action="inc/form-action.php" method="POST" id="#contact-form">
-						<input type="text" placeholder="Full Name" name="name">
-						<input type="email" placeholder="Email Address" name="email">
-						<input type="text" placeholder="Phone" name="phone">
-						<textarea placeholder="Write some words of encouragement" name="message"></textarea>
-						<button type="submit">SEND MESSAGE</button>
-					</form>
-					<p class="form-message f4 fw-7 cw text-center mt-3"></p>
-				</div>
+				<form action="inc/sendemail.php" class="contact-form">
+					<input type="text" placeholder="Full Name" name="name">
+					<input type="email" placeholder="Email Address" name="email">
+					<input type="text" placeholder="Phone" name="phone">
+					<textarea placeholder="Write some words of encouragement" name="message"></textarea>
+					<button type="submit">SEND MESSAGE</button>
+					<div class="form-result f4 cw text-center mt-3"></div>
+				</form>
 			</div>
 		</div>
 		<p class="text-center cw mt-5 f2 copyright">©2020 All rights reserved by <a href="http://www.shafrinakhatun.com/" class="c2 fw-7">shafrinakhatun</a></p>

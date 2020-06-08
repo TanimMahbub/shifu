@@ -36,6 +36,36 @@ function bootstrapAnimatedLayer() {
         doAnimations($animatingElems);
     });
 }
+ 
+function contactFormValidation() {
+    if ($('.contact-form').length) {
+        $('.contact-form').validate({ // initialize the plugin
+            rules: {
+                name: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                message: {
+                    required: true
+                }
+            },
+            submitHandler: function(form) {
+                // sending value with ajax request
+                $.post($(form).attr('action'), $(form).serialize(), function(response) {
+                    $(form).find('.form-result').append(response);
+                    $(form).find('input[type="text"]').val('');
+                    $(form).find('input[type="email"]').val('');
+                    $(form).find('textarea').val('');
+                    console.log(response);
+                });
+                return false;
+            }
+        });
+    }
+}
 
 function wowActivation() {
 // Activation of WOW
@@ -164,6 +194,7 @@ jQuery(document).on('ready', function() {
         wowActivation();
         bootstrapAnimatedLayer();
         hamburger();
+        contactFormValidation();
 
         var $navi = $(".main-nav"), scrollTop = 0;
           $(window).scroll(function () {
