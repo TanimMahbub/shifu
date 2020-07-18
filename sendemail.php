@@ -1,8 +1,8 @@
 <?php
 
 // Define some constants
-define( "RECIPIENT_NAME", "Web Enquiry" );
-define( "RECIPIENT_EMAIL", "tanim.mahbub001@gmail.com" );
+define( "RECIPIENT_NAME", "Master Shifu" );
+define( "RECIPIENT_EMAIL", "shafrina.kh@gmail.com" );
 
 // Read the form values
 $success = false;
@@ -35,7 +35,7 @@ $body .= 'message: ' . "\r\n" . $message;
 if ( $name && $senderEmail && $message ) {
   $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
   $headers = "From: " . $name . " <" . $senderEmail . ">";  
-  $success = mail( $recipient, $mail_subject, $body, $headers );
+  $success = mail( $recipient, $mail_subject, $body);
   echo "<div class='inner success'><p class='success'>Thank you for contacting SRL Electrical. We will contact you ASAP!</p></div><!-- /.inner -->";
 }else {
 	echo "<div class='inner error'><p class='error'>Something went wrong. Please try again.</p></div><!-- /.inner -->";

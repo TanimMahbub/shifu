@@ -3,22 +3,3 @@
     max-width: 1170px;
   }
 }
-
-@media(max-width: 1199px) {
-	.vcard::before {
-		display: none;
-	}
-
-	.cardblock {
-		float: none;
-		width: calc(100% - 30px);
-		margin-left: auto !important;
-		margin-right: auto !important;
-	}
-}
-
-@media(max-width: 991px) {
-	[data-target="#mainMenu"] {
-	    display: block;
-	}
-}

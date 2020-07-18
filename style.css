@@ -615,6 +615,27 @@ nav {
     pointer-events: none;
 }
 
+@media(max-width: 1400px) {
+    .secNum {
+        font-size: 250px;
+    }
+}
+@media(max-width: 1199px) {
+    .secNum {
+        font-size: 200px;
+    }
+}
+@media(max-width: 991px) {
+    .secNum {
+        font-size: 150px;
+    }
+}
+@media(max-width: 767px) {
+    .secNum {
+        font-size: 100px;
+    }
+}
+
 .secNum.sec-l {left: 0;}
 .secNum.sec-r {right: 0;}
 
@@ -1393,6 +1414,41 @@ figcaption > a {
 
 .copyright > i {
     font-size: 14px;
+}
+
+.g-form {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 9;
+    text-align: center;
+    -webkit-box-shadow: 0 0 30px #000;
+    box-shadow: 0 0 30px #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.g-form::before {
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 120px;
+    border: 10px solid #041822;
+    -webkit-transform: skewX(45deg) translateX(-50%);
+    -ms-transform: skewX(45deg) translateX(-50%);
+    -o-transform: skewX(45deg) translateX(-50%);
+    transform: skewX(45deg) translateX(-50%);
+    top: -44%;
+    left: 50%;
+    transition: all .3s ease;
+}
+
+.g-form:hover::before {
+    width: 65%;
+    border: 20px solid #041822;
 }
 /*contact end*/
 
