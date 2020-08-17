@@ -1,8 +1,8 @@
 <?php
 
 // Define some constants
-define( "RECIPIENT_NAME", "Master Shifu" );
-define( "RECIPIENT_EMAIL", "shafrina.kh@gmail.com" );
+define( "RECIPIENT_NAME", "Tanim Mahbub" );
+define( "RECIPIENT_EMAIL", "tanim.mahbub001@gmail.com" );
 
 // Read the form values
 $success = false;
@@ -36,9 +36,13 @@ if ( $name && $senderEmail && $message ) {
   $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
   $headers = "From: " . $name . " <" . $senderEmail . ">";  
   $success = mail( $recipient, $mail_subject, $body);
-  echo "<div class='inner success'><p class='success'>Thank you for contacting SRL Electrical. We will contact you ASAP!</p></div><!-- /.inner -->";
+  echo "<div class='alert alert-light alert-dismissible fade show'><strong>Thank you</strong> for contacting. We will reply you ASAP! <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+    <span aria-hidden='true'>&times;</span>
+  </button></div><!-- /.inner -->";
 }else {
-	echo "<div class='inner error'><p class='error'>Something went wrong. Please try again.</p></div><!-- /.inner -->";
+	echo "<div class='alert alert-danger alert-dismissible fade show'><strong>Something went wrong.</strong> Please try again. <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+    <span aria-hidden='true'>&times;</span>
+  </button></div><!-- /.inner -->";
 }
 
 ?>
