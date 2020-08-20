@@ -143,17 +143,6 @@ function mainMenu() {
         });
     };
 }
- 
-  
-function fixedNav() {
-    if ($(".main-nav").length) {
-        if ($(window).scrollTop() > 60) {
-            $(".main-nav").addClass("fixed-nav")
-        } else {
-            $(".main-nav").removeClass("fixed-nav")
-        }
-    }
-}
 
 // hamburger
 function hamburger() {
@@ -162,9 +151,9 @@ function hamburger() {
             hamburger.on("click", function() {
             $(this).toggleClass("is-active");
 
-            $('.navbar-nav li a[rel="m_PageScroll2id"] ').on('click', function(e) {
+            $('.main-menu-wrapper a[rel="m_PageScroll2id"] ').on('click', function(e) {
                 e.preventDefault();
-                $('.navbar-collapse').removeClass('show');
+                $('header').removeClass('focus');
                 $('.hamburger').removeClass('is-active');
             });
         });
@@ -185,6 +174,26 @@ function filterizrActivation() {
     };
 }
 
+function menuButtonFocus() {
+    if($('header').length){
+        $(".menu-switch").on('click', function () {
+            $("header").toggleClass('focus');
+        });
+
+        $(".page-wrapper").on('click', function () {
+            $("header").removeClass('focus');
+            $('.hamburger').removeClass('is-active');
+        });
+    };
+}
+
+jQuery(document).on('keydown', function(event) { 
+    if (event.key == "Escape") { 
+        $('header').removeClass('focus');
+        $('.hamburger').removeClass('is-active');
+    } 
+});
+
 // instance of fuction while Document ready event   
 jQuery(document).on('ready', function() {
     (function($) {
@@ -195,6 +204,7 @@ jQuery(document).on('ready', function() {
         bootstrapAnimatedLayer();
         hamburger();
         contactFormValidation();
+        menuButtonFocus();
 
         var $navi = $(".main-nav"), scrollTop = 0;
           $(window).scroll(function () {
@@ -215,11 +225,9 @@ jQuery(document).on('ready', function() {
     })(jQuery);
 });
 
-
 // instance of fuction while Window Scroll event
 jQuery(window).on('scroll', function () {   
     (function ($) {
-        fixedNav();
         backToTopVisible();
     })(jQuery);
 });

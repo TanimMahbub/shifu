@@ -15,62 +15,95 @@
 		<link href="css/lightbox.css" rel="stylesheet" />
 		<link href="css/waves.min.css" rel="stylesheet" />
 		<link href="css/hamburgers.min.css" rel="stylesheet" />
-		<link href="style.css" rel="stylesheet" />
-		<link href="css/responsive.css" rel="stylesheet" />
+		<link href="style.min.css" rel="stylesheet" />
 	</head>
 
 	<body>
 		<header>
-			<label class="menu-switch">
-				<span></span>
-				<span></span>
-				<span></span>
-			</label>
-			<nav class="d-none">
-				<ul>
+			<button class="hamburger hamburger--collapse menu-switch">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<nav class="main-menu-wrapper">
+				<a href="#home" rel="m_PageScroll2id" class="logo">
+					<img src="img/logo.png" alt="Logo">
+				</a>
+				<h2 class="f1 fw-7 c2 text-center mb-2">John Doe</h2>
+				<ul class="main-menu f4">
 					<li>
-						<a href="#">
-							<i class="fa fa-"></i>
-							<span></span>
+						<a href="#home" rel="m_PageScroll2id">
+							<i class="fa fa-home"></i>
+							<span>Home</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
-							<i class="fa fa-"></i>
-							<span></span>
+						<a href="#about" rel="m_PageScroll2id">
+							<i class="fa fa-info-circle"></i>
+							<span>About</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
-							<i class="fa fa-"></i>
-							<span></span>
+						<a href="#resume" rel="m_PageScroll2id">
+							<i class="fa fa-list-alt"></i>
+							<span>Resume</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
-							<i class="fa fa-"></i>
-							<span></span>
+						<a href="#skill" rel="m_PageScroll2id">
+							<i class="fa fa-bar-chart"></i>
+							<span>Skill</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
-							<i class="fa fa-"></i>
-							<span></span>
+						<a href="#works" rel="m_PageScroll2id">
+							<i class="fa fa-briefcase"></i>
+							<span>Portfolio</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
-							<i class="fa fa-"></i>
-							<span></span>
+						<a href="#blog" rel="m_PageScroll2id">
+							<i class="fa fa-pencil-square"></i>
+							<span>Blog</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
-							<i class="fa fa-"></i>
-							<span></span>
+						<a href="#contact" rel="m_PageScroll2id">
+							<i class="fa fa-envelope"></i>
+							<span>Contact</span>
 						</a>
 					</li>
 				</ul>
+				<ul class="short-contact d-flex justify-content-between p-0 flex-wrap">
+					<li>
+						<a href="#" target="_blank">
+							<span>Facebook</span>
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">
+							<span>Twitter</span>
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">
+							<span>Instagram</span>
+							<i class="fa fa-instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:info@gmail.com">
+							<span>Gmail</span>
+							<i class="fa fa-envelope"></i>
+						</a>
+					</li>
+				</ul>
+				<p class="text-white text-center f2 mt-3">©2020 All rights reserved by <span class="fw-7 f4">Shafrina Khatun</span></p>
+				<hr>
+				<p class="text-white text-center f2">Designed & Developed by <a href="http://tanim.me/" target="_blank" class="fw-7 f4">Tanim Mahbub</a></p>
+				<hr>
 			</nav>
 		</header>
 		<!-- ------------------ -->
@@ -87,7 +120,7 @@
 						<div class="carousel-item active">
 							<div class="container h-100">
 								<div class="row h-100 align-items-center justify-content-between no-gutters crop text-white">
-									<div class="col-lg-7">
+									<div class="col-lg-7 text-center text-lg-left">
 										<div class="bannerContent pr-2">
 											<span data-animation="animated fadeInUp animDe-1" class="f3">Hello,</span>
 											<h2 data-animation="animated fadeInUp animDe-2" class="fw-7 f1 c2 my-3">I'm John</h2>
@@ -95,7 +128,7 @@
 											<a href="#about" data-animation="animated fadeInUp animDe-4" class="bg2 c1 f2" rel="m_PageScroll2id">know more</a>
 										</div>
 									</div>
-									<div class="col-lg-5">
+									<div class="col-lg-5 d-none d-lg-block">
 										<div class="slider-img mr-lg-3 tiltCard" data-animation="animated fadeInRight animDe-5">
 											<div class="img-holder">
 												<img src="img/profile/01.jpg" data-animation="animated pulse animDe-6" alt="Shafrina" />
@@ -109,7 +142,7 @@
 						<div class="carousel-item">
 							<div class="container h-100">
 								<div class="row h-100 align-items-center justify-content-between no-gutters crop text-white">
-									<div class="col-lg-7">
+									<div class="col-lg-7 text-center text-lg-left">
 										<div class="bannerContent pr-2">
 											<span data-animation="animated fadeInUp animDe-1" class="f3">welcome to</span>
 											<h2 data-animation="animated fadeInUp animDe-2" class="fw-7 f1 c2 my-3">My World!</h2>
@@ -117,7 +150,7 @@
 											<a href="#works" rel="m_PageScroll2id" data-animation="animated fadeInUp animDe-4" class="bg2 c1 f2">my work</a>
 										</div>
 									</div>
-									<div class="col-lg-5">
+									<div class="col-lg-5 d-none d-lg-block">
 										<div class="slider-img mr-lg-3 tiltCard" data-animation="animated fadeInRight animDe-5">
 											<div class="img-holder">
 												<img src="img/profile/02.jpg" data-animation="animated pulse animDe-6" alt="Shafrina" />
@@ -403,7 +436,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-12">
-								<ul class="filter-list f2 text-center text-uppercase mb-4 d-flex justify-content-between">
+								<ul class="filter-list f2 text-center text-uppercase mb-4 d-flex justify-content-center justify-content-sm-between flex-wrap flex-sm-nowrap">
 									<li class="filter active" data-filter="all">All</li>
 									<li class="filter" data-filter="1">creative</li>
 									<li class="filter" data-filter="2">events</li>
@@ -510,7 +543,7 @@
 				<div class="blog-area cw">
 					<div class="container">
 						<div class="row justify-content-center">
-							<div class="col-xl-4 col-lg-6">
+							<div class="col-xl-4 col-md-6">
 								<div class="blog-card tiltCard">
 									<span class="date">15th April 2020</span>
 									<div class="thumbnail">
@@ -541,7 +574,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-4 col-lg-6">
+							<div class="col-xl-4 col-md-6">
 								<div class="blog-card tiltCard">
 									<span class="date">23rd March 2020</span>
 									<div class="thumbnail">
@@ -572,7 +605,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-4 col-lg-6">
+							<div class="col-xl-4 col-md-6">
 								<div class="blog-card tiltCard">
 									<span class="date">10th February 2020</span>
 									<div class="thumbnail">
@@ -661,7 +694,7 @@
 							</form>
 						</div>
 					</div>
-					<p class="text-center cw mt-5 f2 copyright">©2020 All rights reserved by <a href="http://www.shafrinakhatun.com/" class="c2 fw-7">shafrinakhatun</a></p>
+					<p class="text-center cw mt-5 f2 copyright">©2020 All rights reserved by <a href="#" class="c2 fw-7">domain</a> || Designed & Developed by <a href="http://tanim.me/" target="_blank" class="c2 fw-7">Tanim Mahbub</a></p>
 				</div>
 			</div>
 			<!-- contact end -->
