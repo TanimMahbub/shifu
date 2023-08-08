@@ -164,7 +164,7 @@ function hamburger() {
 function filterizrActivation() {
     if($('.filtr-container').length){
         var filterizd = $('.filtr-container').filterizr({
-           layout: 'packed'
+            layout: 'packed'
         });
 
         $('.filter-list li.filter').on('click', function() {
